@@ -1,0 +1,40 @@
+{
+  "name": "Airgeadra",
+  "version": "0.0.1",
+  "repository": "git@github.com:Padraic-O-Mhuiris/maker-numeral.git",
+  "author": "padraic-X <patrick.morris.310@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watchAll",
+    "build": "tsc",
+    "build:watch": "onchange 'src/**/*.ts' -- yarn build",
+    "view:coverage": "serve coverage/lcov-report"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@types/jest": "^25.2.1",
+    "@types/source-map-support": "^0.5.1",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "on-change": "^2.0.1",
+    "prettier": "2.0.5",
+    "serve": "^11.3.0",
+    "source-map-support": "^0.5.19",
+    "ts-essentials": "^7.0.0",
+    "ts-jest": "^25.5.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "immutable": "^4.0.0-rc.12",
+    "ts-invariant": "^0.4.4"
+  }
+}
